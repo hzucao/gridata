@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+      background-color: bisque;
+      padding: 10px;
+  }
+  
+  main{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px 500px 100px;
+      grid-gap: 10px;
+      grid-template-areas: "h h h" "c c m" "r r r";
+  }
+  
+  header, nav, article, footer{
+      padding: 20px;
+      font-size: 3em;
+      display: flex;
+      justify-content: center;
+  }
+  
+  header{
+      background-color: blue;
+      grid-area: h;}
+  
+  nav{
+      background-color: coral;
+      grid-area: m;
+  }
+  
+  article{
+      background-color: chartreuse;
+      grid-area: c;
+      
+  }
+  
+  footer{
+      background-color: yellow;
+      grid-area: r;
+  }
